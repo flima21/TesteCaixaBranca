@@ -31,3 +31,8 @@ Não foram identificados erros no momento de instanciar.
 3. As nomenclaturas de variáveis podem ser alteradas para elucidar melhor o processo de manutenção, por exemplo, `nome para nome_usuario` e o `result para result_query`.
 ### QUARTO TESTE - DOCUMENTAÇÃO
 1. Não há documentação que oriente a pessoa que irá manusear o código de forma rápida e explicativa, forçando os analistas a lerem o código de forma completa.
+
+# COMPLEXIDADE CICLOMÁTICA
+A complexidade ciclómatica é dada por `V(G) = E – N + 2.`. Sendo: 
+1. E: Número de arestas
+2. N: Número de Nós do grafo
