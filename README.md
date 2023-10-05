@@ -32,7 +32,30 @@ Não foram identificados erros no momento de instanciar.
 ### QUARTO TESTE - DOCUMENTAÇÃO
 1. Não há documentação que oriente a pessoa que irá manusear o código de forma rápida e explicativa, forçando os analistas a lerem o código de forma completa.
 
+# NOTAÇÃO DE GRAFO DE FLUXO
+Neste repositório foi criado a notação de grafo, ferramenta que representa o fluxo de controle lógico de uma determinada estrutura de código para atribuir os devidos testes e evidencias os possíveis caminhos. Conforme mostra a imagem ![Notação de Grafo](CaminhosIndependentes.png) criada após a identificação dos pontos de extração ![Pontos de extração](EnumeracaoScript.png) Com isso, foi possível identificar `13 nós` e `15 arestas`.
+
 # COMPLEXIDADE CICLOMÁTICA
 A complexidade ciclómatica é dada por `V(G) = E – N + 2.`. Sendo: 
 1. E: Número de arestas
 2. N: Número de Nós do grafo
+
+Portanto:
+```
+E = 15
+N = 13
+
+V(G) = 15 - 13 + 2
+V(G) = 2 + 2
+V(G) = 4
+
+COMPLEXIDADE CICLOMÁTICA = 4
+```
+Logo, com a identificação das complexidade ciclomática e realização dos grafos, foi possível identificar os seguintes caminhos independentes.
+1. `1-2-3-4-6-7-8-9-10-12-13`
+2. `1-2-3-4-5-7-8-9-10-12-13`
+3. `1-2-3-4-6-7-8-9-11-13`
+4. `1-2-3-4-6-7-8-9-12-13`
+
+Sendo o caminho 4 o mais curto e de retorno possível para o desejado que é a atribuição da váriavel `nome`.
+
