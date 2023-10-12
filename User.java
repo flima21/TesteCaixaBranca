@@ -22,6 +22,7 @@ public class User {
      * Estabelece conexão com o banco de dados
      * 
      * @return o objeto de conexão do banco de dados.
+     * @throws Exception mensagem de falha na conexão
      */
     public Connection conectarBD(){
         Connection conn = null;
@@ -55,7 +56,7 @@ public class User {
      * @param senha A senha de acesso a aplicação
      * 
      * @return booleano identificando se há ou não o usuário, em caso verdadeiro é True.
-     *  
+     * @throws Exception mensagem de execução falha
      */
     public boolean verificarUsuario(String login,String senha) {
         String sql = "";
